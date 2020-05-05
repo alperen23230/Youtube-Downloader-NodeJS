@@ -5,7 +5,9 @@ const app = express();
 const { v4: uuidv4 } = require('uuid');
 app.use('/static', express.static('./static'));
 
-app.listen(3000, () => {
+var PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
     console.log("It Works!");
 });
 
