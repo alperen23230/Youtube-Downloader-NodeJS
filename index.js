@@ -3,6 +3,9 @@ const cors = require('cors');
 const ytdl = require('ytdl-core');
 const app = express();
 const { v4: uuidv4 } = require('uuid');
+
+app.use(cors());
+
 app.use('/static', express.static('./static'));
 
 var PORT = process.env.PORT || 3000;
