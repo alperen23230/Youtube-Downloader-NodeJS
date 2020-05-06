@@ -1,9 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
-const fs = require('fs');
 const app = express();
-const { v4: uuidv4 } = require('uuid');
 
 app.use(cors());
 
